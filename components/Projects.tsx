@@ -63,7 +63,7 @@ const Projects = () => {
               </a>
               <a
                 className="hover:text-textGreen duration-300"
-                href="https://647ebb5414d078602a0c889b--cozy-baklava-fd337c.netlify.app/"
+                href="https://ecommersvishwajeet.netlify.app/"
                 target="_blank"
               >
                 <RxOpenInNewWindow />
