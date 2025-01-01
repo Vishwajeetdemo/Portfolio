@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { TiArrowForward } from "react-icons/ti";
 
 const ReactBD = () => {
+  //ESSL
   return (
     <motion.div
       initial={{ opacity: 0 }}

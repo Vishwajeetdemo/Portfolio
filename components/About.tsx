@@ -18,6 +18,7 @@ const About = () => {
             I have successfully delivered numerous projects that combine
             rich user interfaces with robust server-side logic. Welcome to my portfolio!
           </p>
+
           <p>
             My journey in software development began start to college life, and I quickly found my niche in ,{" "}
             <span className="text-textGreen">
@@ -28,6 +29,7 @@ const About = () => {
               Authentication and authorization with JWT and OAuth!
             </span>
           </p>
+          
           <p>
             <ul>
               <li style={{fontWeight: 'bold',color:"Highlight"}}>Frontend Development with React</li>

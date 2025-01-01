@@ -39,6 +39,21 @@ const Archive = () => {
           link="https://647ebb5414d078602a0c889b--cozy-baklava-fd337c.netlify.app/"
         />
         
+        <ArchiveCard
+          title="School Project for US Client, Authentication: JWT (JSON Web Tokens), Learforlife Brand"
+          des="This project involved building both the front-end and back-end using React and Node.js, where React handled the user interface, and Node.js provided the server-side functionality with a MongoDB database to store user data."
+          listItem={[
+            "React.js",
+            "Node.js",
+            "MongoDB",
+            "Express.js",
+            "JWT",
+            "CSS",
+            "HTML",
+          ]}
+          link="https://learn4life.org/"
+        />
+
 
         {showMore && (
           <>
@@ -47,43 +62,60 @@ const Archive = () => {
               whileInView={{ opacity: 1 }}
               transition={{ delay: 0.1 }}
             >
-             {/*  <ArchiveCard
-                title="OREBI e-commerce Shopping store"
-                des="Developed an Amazon clone web application using the MERN (MongoDB, Express.js, 
-                  React, Node.js) stack. Implemented features including user authentication, product 
-                  browsing, shopping cart management, and checkout functionality. Utilized React for
-                   building responsive user interfaces, Node.js for backend logic, and MongoDB for data 
-                   storage. Integrated third-party APIs for 
-                payment processing and deployed the application to a cloud platform for scalability."
-                listItem={["Reactjs", "Tailwind CSS", "getform.io"]}
-                link="https://orebishopping.reactbd.com/"
-              /> */}
+              <ArchiveCard
+                title="School Project for US Client, Authentication: JWT (JSON Web Tokens), llac Brand"
+                des="This project involved building both the front-end and back-end using React and Node.js, where React handled the user interface, and Node.js provided the server-side functionality with a MongoDB database to store user data."
+                listItem={[
+                  "React.js",
+                  "Node.js",
+                  "MongoDB",
+                  "Express.js",
+                  "JWT",
+                  "CSS",
+                  "HTML",
+                ]}
+                link="https://llac.org/"
+              />
             </motion.div>
             <motion.div
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ delay: 0.2 }}
             >
-             {/*  <ArchiveCard
-                title="Noor Online Shopping Store"
-                des=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-            laudantium velit qui sint non, voluptates quo a veritatis."
-                listItem={["Reactjs", "Tailwind CSS", "redux-toolkit"]}
-                link="https://noorshop.netlify.app/"
-              /> */}
+              <ArchiveCard
+                title="School Project for US Client, Authentication: JWT (JSON Web Tokens), holston Brand"
+                des="This project involved building both the front-end and back-end using React and Node.js, where React handled the user interface, and Node.js provided the server-side functionality with a MongoDB database to store user data."
+                listItem={[
+                  "React.js",
+                  "Node.js",
+                  "MongoDB",
+                  "Express.js",
+                  "JWT",
+                  "CSS",
+                  "HTML",
+                ]}
+                link="https://holstonacademy.org/"
+              />
             </motion.div>
             <motion.div
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ delay: 0.3 }}
             >
-              {/* <ArchiveCard
-                title="Personalized Blog"
-                des=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-            laudantium velit qui sint non, voluptates quo a veritatis."
-                listItem={["Nextjs", "Tailwind CSS", "next-auth", "firebase"]}
-                link="https://my-blog-delta-eight.vercel.app/"
-              /> */}
+              <ArchiveCard
+                title="School Project for US Client, Authentication: JWT (JSON Web Tokens), elev8school Brand"
+                des="This project involved building both the front-end and back-end using React and Node.js, where React handled the user interface, and Node.js provided the server-side functionality with a MongoDB database to store user data."
+                listItem={[
+                  "React.js",
+                  "Node.js",
+                  "MongoDB",
+                  "Express.js",
+                  "JWT",
+                  "CSS",
+                  "HTML",
+                ]}
+                link="https://elev8schools.org/"
+              />
             </motion.div>
             <motion.div
               initial={{ opacity: 0 }}
