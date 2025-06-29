@@ -118,11 +118,11 @@ const Experience = () => {
             
           </li>
         </ul>
+        {workAmazon && <Amazon />}
         {workReactbd && <ReactBD />}
         {workGoogle && <Google />}
         {workApple && <Apple />}
         {workSplash && <Splash />}
-        {workAmazon && <Amazon />}
       </div>
     </section>
   );
