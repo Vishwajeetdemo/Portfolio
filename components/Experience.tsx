@@ -7,11 +7,11 @@ import ReactBD from "./works/ReactBD";
 import Splash from "./works/Splash";
 
 const Experience = () => {
-  const [workReactbd, setWorkReactbd] = useState(true);
+  const [workReactbd, setWorkReactbd] = useState(false);
   const [workGoogle, setWorkGoogle] = useState(false);
   const [workApple, setWorkApple] = useState(false);
   const [workSplash, setWorkSplash] = useState(false);
-  const [workAmazon, setWorkAmazon] = useState(false);
+  const [workAmazon, setWorkAmazon] = useState(true);
 
   const handleReactbd = () => {
     setWorkReactbd(true);

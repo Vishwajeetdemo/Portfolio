@@ -29,23 +29,20 @@ const About = () => {
               Authentication and authorization with JWT and OAuth!
             </span>
           </p>
-          
-          <p>
-            <ul>
-              <li style={{fontWeight: 'bold',color:"Highlight"}}>Frontend Development with React</li>
-              Building responsive and dynamic user interfaces using React.
-              State management with Redux and Context API.
-              Styling with CSS-in-JS, Styled Components, and Sass.
-              Implementing client-side routing with React Router.
-              Optimizing performance with code splitting and lazy loading.
-              <li style={{ fontWeight: 'bold', color: "Highlight" }}>Backend Development with Node.js</li>
-              <p>Developing RESTful APIs and GraphQL services with Node.js and Express.
-                Real-time applications using WebSockets and Socket.io.
-                Database integration with MongoDB, PostgreSQL, and MySQL.
-                Authentication and authorization with JWT and OAuth.
-                Containerization and deployment using Docker.</p>
-            </ul>
-          </p>
+          <ul>
+            <li style={{fontWeight: 'bold',color:"Highlight"}}>Frontend Development with React</li>
+            <li>Building responsive and dynamic user interfaces using React.</li>
+            <li>State management with Redux and Context API.</li>
+            <li>Styling with CSS-in-JS, Styled Components, and Sass.</li>
+            <li>Implementing client-side routing with React Router.</li>
+            <li>Optimizing performance with code splitting and lazy loading.</li>
+            <li style={{ fontWeight: 'bold', color: "Highlight" }}>Backend Development with Node.js</li>
+            <li>Developing RESTful APIs and GraphQL services with Node.js and Express.</li>
+            <li>Real-time applications using WebSockets and Socket.io.</li>
+            <li>Database integration with MongoDB, PostgreSQL, and MySQL.</li>
+            <li>Authentication and authorization with JWT and OAuth.</li>
+            <li>Containerization and deployment using Docker.</li>
+          </ul>
           <p>Here are a few technologies I have been working with recently:</p>
           <ul className="max-w-[450px] text-sm font-titleFont grid grid-cols-2 gap-2 mt-6">
             <li className="flex items-center gap-2">
