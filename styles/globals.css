@@ -3,14 +3,37 @@
 @tailwind utilities;
 
 @layer components {
-  .contactInput {
-    @apply w-full text-base text-white placeholder:text-textLight border border-b-[1px] border-transparent border-b-textGreen py-3 px-2 outline-none focus-within:border-[1px] focus-within:border-textGreen duration-100 bg-zinc-800;
+  /* Shared page width + gutters so every section lines up */
+  .container-x {
+    @apply w-full max-w-[1120px] mx-auto px-5 sm:px-6 lg:px-8;
+  }
+  /* Shared vertical rhythm for every section */
+  .section-y {
+    @apply py-20 md:py-28 scroll-mt-20;
+  }
+  .bg-grid {
+    background-image: radial-gradient(rgba(79, 70, 229, 0.16) 1px, transparent 1px);
+    background-size: 22px 22px;
+  }
+  .btn-primary {
+    @apply inline-flex items-center justify-center h-12 px-7 rounded-md bg-accent text-white text-sm font-titleFont font-semibold tracking-wide shadow-md shadow-accent/20 hover:bg-accentLight hover:-translate-y-0.5 duration-300;
+  }
+  .btn-outline {
+    @apply inline-flex items-center justify-center h-12 px-7 rounded-md border border-accent text-accent text-sm font-titleFont font-semibold tracking-wide hover:bg-hoverColor hover:-translate-y-0.5 duration-300;
   }
 }
 
 .scrollbarHide::-webkit-scrollbar {
   display: none;
 }
-.active {
-  color: #64ffda;
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background: #ffffff;
+}
+::selection {
+  background: rgba(79, 70, 229, 0.2);
+  color: #0f172a;
 }

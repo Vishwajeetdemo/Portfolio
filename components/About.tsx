@@ -1,124 +1,102 @@
-import { profileImg } from "@/public/assets";
-import Image from "next/image";
 import SectionTitle from "./SectionTitle";
+import Reveal from "./Reveal";
 import { AiFillThunderbolt } from "react-icons/ai";
+import { FiCode, FiCpu, FiServer } from "react-icons/fi";
+import { skillGroups } from "@/lib/data";
+
+const highlights = [
+  {
+    Icon: FiCode,
+    title: "Modern Frontend",
+    text: "Responsive, accessible interfaces with React, Next.js and Tailwind CSS.",
+  },
+  {
+    Icon: FiServer,
+    title: "Scalable Backend",
+    text: "REST APIs, JWT / OAuth security and databases built with Node.js.",
+  },
+  {
+    Icon: FiCpu,
+    title: "Generative AI",
+    text: "LLM apps, RAG pipelines and Agentic AI workflows for real use cases.",
+  },
+];
 
 const About = () => {
   return (
-    <section
-      id="about"
-      className="max-w-containerSmall mx-auto py-10 lgl:py-32 flex flex-col gap-8"
-    >
-      <SectionTitle title="About Me" titleNo="01" />
-      <div className="flex flex-col lgl:flex-row gap-16">
-        <div className="w-full lgl:w-2/3 text-base text-textDark font-medium flex flex-col gap-4">
-          <p>
-            Hi, I am Vishwajeet Kumar, a passionate and experienced software developer specializing
-            in React and Node.js. With 3 years of hands-on experience in full-stack development,
-            I have successfully delivered numerous projects that combine
-            rich user interfaces with robust server-side logic. Welcome to my portfolio!
-          </p>
+    <section id="about" className="section-y bg-surface">
+      <div className="container-x">
+        <SectionTitle title="About Me" titleNo="01 — Who I am" />
 
-          <p>
-            My journey in software development began start to college life, and I quickly found my niche in ,{" "}
-            <span className="text-textGreen">
-              full-stack development with React and Node.js.
-            </span>
-            I love building applications that not only look great but also perform exceptionally well under the hood.{" "}
-            <span className="text-textGreen">
-              Authentication and authorization with JWT and OAuth!
-            </span>
-          </p>
-          <ul>
-            <li style={{fontWeight: 'bold',color:"Highlight"}}>Frontend Development with React</li>
-            <li>Building responsive and dynamic user interfaces using React.</li>
-            <li>State management with Redux and Context API.</li>
-            <li>Styling with CSS-in-JS, Styled Components, and Sass.</li>
-            <li>Implementing client-side routing with React Router.</li>
-            <li>Optimizing performance with code splitting and lazy loading.</li>
-            <li style={{ fontWeight: 'bold', color: "Highlight" }}>Backend Development with Node.js</li>
-            <li>Developing RESTful APIs and GraphQL services with Node.js and Express.</li>
-            <li>Real-time applications using WebSockets and Socket.io.</li>
-            <li>Database integration with MongoDB, PostgreSQL, and MySQL.</li>
-            <li>Authentication and authorization with JWT and OAuth.</li>
-            <li>Containerization and deployment using Docker.</li>
-          </ul>
-          <p>Here are a few technologies I have been working with recently:</p>
-          <ul className="max-w-[450px] text-sm font-titleFont grid grid-cols-2 gap-2 mt-6">
-            <li className="flex items-center gap-2">
-              <span className="text-textGreen">
-                <AiFillThunderbolt />
+        <div className="grid lgl:grid-cols-2 gap-12 lgl:gap-16 items-start">
+          {/* Bio */}
+          <Reveal className="flex flex-col gap-5 text-textDark text-base md:text-lg leading-relaxed">
+            <p>
+              Hi, I’m Vishwajeet Kumar, a full-stack developer with{" "}
+              <span className="text-accent font-semibold">
+                4+ years of experience
+              </span>{" "}
+              building web applications that pair clean, responsive interfaces
+              with robust server-side logic. I started programming in college
+              and found my niche in the React and Node.js ecosystem.
+            </p>
+            <p>
+              Today I work at{" "}
+              <span className="text-accent font-semibold">Royal Cyber</span>,
+              building products with React, Next.js and Node.js and designing{" "}
+              <span className="text-accent font-semibold">
+                Generative AI solutions using LLMs, RAG pipelines and Agentic AI
+                workflows
               </span>
-              JavaScript (ES6+)
-            </li>
-            <li className="flex items-center gap-2">
-              <span className="text-textGreen">
-                <AiFillThunderbolt />
-              </span>
-              Next.js
-            </li>
-            <li className="flex items-center gap-2">
-              <span className="text-textGreen">
-                <AiFillThunderbolt />
-              </span>
-              React
-            </li>
-            <li className="flex items-center gap-2">
-              <span className="text-textGreen">
-                <AiFillThunderbolt />
-              </span>
-              Node.js
-            </li>
-            <li className="flex items-center gap-2">
-              <span className="text-textGreen">
-                <AiFillThunderbolt />
-              </span>
-              TypeScript
-            </li>
-            <li className="flex items-center gap-2">
-              <span className="text-textGreen">
-                <AiFillThunderbolt />
-              </span>
-              Express.js
-            </li>
-            <li className="flex items-center gap-2">
-              <span className="text-textGreen">
-                <AiFillThunderbolt />
-              </span>
-              MongoDB
-            </li>
-            <li className="flex items-center gap-2">
-              <span className="text-textGreen">
-                <AiFillThunderbolt />
-              </span>
-              MySql
-            </li>
-            <li className="flex items-center gap-2">
-              <span className="text-textGreen">
-                <AiFillThunderbolt />
-              </span>
-              SQL
-            </li>
-            <li className="flex items-center gap-2">
-              <span className="text-textGreen">
-                <AiFillThunderbolt />
-              </span>
-              Tailwindcss
-            </li>
-          </ul>
-        </div>
-        <div className="w-full lgl:w-1/3 h-80 relative group">
-          <div className="absolute w-full h-80 -left-6 -top-6 rounded-lg ">
-            <div className="w-full h-full relative z-20 flex pl-6 lgl:pl-0">
-              <Image
-                className="rounded-lg h-full object-cover"
-                src={profileImg}
-                alt="profileImg"
-              />
-              <div className="hidden lgl:inline-block absolute w-full h-80 bg-textGreen/20 rounded-md top-0 left-0 group-hover:bg-transparent duration-300"></div>
+              . I care about software that looks great, performs well and solves
+              a real problem.
+            </p>
+
+            <ul className="mt-3 flex flex-col gap-4">
+              {highlights.map(({ Icon, title, text }) => (
+                <li key={title} className="flex gap-4 items-start">
+                  <span className="shrink-0 w-11 h-11 rounded-lg bg-hoverColor text-accent text-xl inline-flex items-center justify-center">
+                    <Icon />
+                  </span>
+                  <div>
+                    <h4 className="font-titleFont font-semibold text-textLight text-base">
+                      {title}
+                    </h4>
+                    <p className="text-sm md:text-base">{text}</p>
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </Reveal>
+
+          {/* Skills */}
+          <Reveal delay={0.1}>
+            <h3 className="font-titleFont font-semibold text-xl text-textLight mb-5">
+              Technologies I work with
+            </h3>
+            <div className="grid grid-cols-1 sml:grid-cols-2 gap-5">
+              {skillGroups.map((group) => (
+                <div
+                  key={group.title}
+                  className="rounded-xl bg-white border border-accent/15 p-5 shadow-sm hover:shadow-lg hover:shadow-accent/10 hover:border-accent/50 hover:-translate-y-1 duration-300"
+                >
+                  <h4 className="font-titleFont text-accent text-sm font-bold uppercase tracking-wider mb-4">
+                    {group.title}
+                  </h4>
+                  <ul className="flex flex-col gap-2.5 text-sm font-titleFont text-textLight">
+                    {group.items.map((item) => (
+                      <li key={item} className="flex items-center gap-2">
+                        <span className="text-accent shrink-0">
+                          <AiFillThunderbolt />
+                        </span>
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
             </div>
-          </div>
-          <div className="hidden lgl:inline-flex w-full h-80 border-2 border-textGreen rounded-md group-hover:-translate-x-2 group-hover:-translate-y-2 transition-transform duration-300"></div>
+          </Reveal>
         </div>
       </div>
     </section>

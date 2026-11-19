@@ -3,15 +3,18 @@ interface Props {
   titleNo: string;
 }
 
+// Centered section heading: small indigo eyebrow, big title, short underline.
 const SectionTitle = ({ title, titleNo }: Props) => {
   return (
-    <h2 className="font-titleFont text-2xl font-semibold flex items-center">
-      <span className="text-base md:text-lg text-textGreen mr-2">
-        {titleNo}.
-      </span>
-      {title}
-      <span className="hidden md:inline-flex md:w-60 lgl:w-72 h-[.5px] bg-gray-700 ml-6"></span>
-    </h2>
+    <div className="text-center mb-12 md:mb-16">
+      <p className="font-titleFont text-accent text-xs md:text-sm font-semibold tracking-[0.25em] uppercase">
+        {titleNo}
+      </p>
+      <h2 className="font-titleFont text-3xl md:text-4xl font-bold mt-3 text-textLight">
+        {title}
+      </h2>
+      <span className="block w-16 h-1 bg-gradient-to-r from-accent to-highlight rounded-full mx-auto mt-5"></span>
+    </div>
   );
 };
 

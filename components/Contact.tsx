@@ -1,26 +1,33 @@
-import Link from "next/link";
+import { FiMail } from "react-icons/fi";
+import { profile } from "@/lib/data";
+import Reveal from "./Reveal";
+import SectionTitle from "./SectionTitle";
 
 const Contact = () => {
   return (
-    <section
-      id="contact"
-      className="max-w-contentContainer mx-auto py-10 xl:py-32 flex flex-col gap-4 items-center justify-center"
-    >
-      <p className="font-titleFont text-lg text-textGreen font-semibold flex items-center tracking-wide">
-        04. What’s Next?
-      </p>
-      <h2 className="font-titleFont text-5xl font-semibold">Get In Touch</h2>
-      <p className="max-w-[600px] text-center text-textDark">
-        Although I’m  currently looking for any new opportunities, my inbox
-        is always open. Whether you have a question or just want to say hi, I’ll
-        try my best to get back to you!
-      </p>
-
-      <a href="mailto:patvishwajeet123@gmail.com">
-        <button className="w-40 h-14 border border-textGreen mt-6 font-titleFont text-sm text-textGreen tracking-wider rounded-md hover:bg-hoverColor duration-300">
-          Say Hello
-        </button>
-      </a>
+    <section id="contact" className="section-y bg-surface">
+      <div className="container-x">
+        <SectionTitle title="Get In Touch" titleNo="04 — What’s next?" />
+        <Reveal className="max-w-2xl mx-auto rounded-2xl bg-white border border-accent/15 shadow-lg shadow-accent/5 p-8 md:p-12 text-center flex flex-col items-center gap-5">
+          <span className="w-14 h-14 rounded-full bg-hoverColor text-accent text-2xl inline-flex items-center justify-center">
+            <FiMail />
+          </span>
+          <p className="text-textDark text-base md:text-lg leading-relaxed">
+            I’m always open to discussing new projects, full-stack roles and
+            Generative AI ideas. Whether you have a question or just want to say
+            hi, my inbox is open and I’ll get back to you as soon as I can.
+          </p>
+          <a
+            href={`mailto:${profile.email}`}
+            className="text-accent font-titleFont font-semibold break-all hover:underline"
+          >
+            {profile.email}
+          </a>
+          <a href={`mailto:${profile.email}`} className="btn-primary mt-2">
+            Say Hello
+          </a>
+        </Reveal>
+      </div>
     </section>
   );
 };

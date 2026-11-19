@@ -10,19 +10,19 @@ interface Props {
 
 const ArchiveCard = ({ title, des, listItem, link }: Props) => {
   return (
-    <a href={link} target="_blank">
-      <div className="w-full h-80 rounded-lg bg-[#112240] p-7 flex flex-col justify-center gap-6 hover:-translate-y-2 transition-transform duration-300 group">
+    <a href={link || undefined} target="_blank" rel="noopener noreferrer" className="block h-full">
+      <div className="w-full h-full min-h-[20rem] rounded-xl bg-surface border border-accent/15 p-7 flex flex-col gap-5 hover:-translate-y-2 hover:border-accent/50 hover:shadow-lg hover:shadow-accent/10 transition-all duration-300 group">
         <div className="flex justify-between items-center">
-          <FaRegFolder className="text-4xl text-textGreen" />
-          <RxOpenInNewWindow className="text-2xl hover:text-textGreen" />
+          <FaRegFolder className="text-4xl text-accent" />
+          <RxOpenInNewWindow className="text-2xl hover:text-accent" />
         </div>
-        <div>
-          <h2 className="text-xl font-titleFont font-semibold tracking-wide group-hover:text-textGreen">
+        <div className="flex-1">
+          <h2 className="text-lg font-titleFont font-semibold tracking-wide group-hover:text-accent">
             {title}
           </h2>
-          <p className="text-sm mt-3">{des}</p>
+          <p className="text-sm mt-3 text-textDark leading-relaxed">{des}</p>
         </div>
-        <ul className="text-xs mdl:text-sm text-textDark flex items-center gap-2 justify-between flex-wrap">
+        <ul className="text-xs text-accent font-titleFont flex items-center gap-x-3 gap-y-1 flex-wrap">
           {listItem.map((item, i) => (
             <li key={i}>{item}</li>
           ))}

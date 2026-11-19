@@ -10,20 +10,20 @@ const Google = () => {
     >
       <h3 className="flex gap-1 font-medium text-xl font-titleFont">
         MERN Stack Developer
-        <span className="text-textGreen tracking-wide">@Newton school Traning</span>
+        <span className="text-accent tracking-wide">@Newton school Traning</span>
       </h3>
       <p className="text-sm mt-1 font-medium text-textDark">
         April 2022 - Dec 2022
       </p>
       <ul className="mt-6 flex flex-col gap-3">
         <li className="text-base flex gap-2 text-textDark">
-          <span className="text-textGreen mt-1">
+          <span className="text-accent mt-1">
             <TiArrowForward />
           </span>
           SKIL: JavaScript, HTML5, CSS, Data structures
         </li>
         <li className="text-base flex gap-2 text-textDark">
-          <span className="text-textGreen mt-1">
+          <span className="text-accent mt-1">
             <TiArrowForward />
           </span>
           Proficient in implementing and utilizing fundamental data structures
@@ -32,7 +32,7 @@ const Google = () => {
           with a strong understanding of time and space complexities.
         </li>
         <li className="text-base flex gap-2 text-textDark">
-          <span className="text-textGreen mt-1">
+          <span className="text-accent mt-1">
             <TiArrowForward />
           </span>
            Participated in various contests organized by Newton School Worked on various projects. 

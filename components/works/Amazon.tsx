@@ -12,18 +12,18 @@ const Amazon = () => {
     >
       <h3 className="flex gap-1 font-medium text-xl font-titleFont">
         MERN Stack Developer
-        <span className="text-textGreen tracking-wide">  @Bangalore Softsell Ltd.</span>
+        <span className="text-accent tracking-wide">  @Bangalore Softsell Ltd.</span>
       </h3>
       <p className="text-sm mt-1 font-medium text-textDark">
-        Augst 2024 - Present
+        August 2024 - Present
       </p>
       <ul className="mt-6 flex flex-col gap-3">
         <li className="text-base flex gap-2 text-textDark">
-          <span className="text-textGreen mt-1">
+          <span className="text-accent mt-1">
             <TiArrowForward />
           </span>
           <p>
-            <span className="text-textGreen">Developed multiple full-stack web applications</span>
+            <span className="text-accent">Developed multiple full-stack web applications</span>
             {" "}
             using React for the front end and Node.js for the back end,
             leveraging Express.js for API development and MongoDB or PostgreSQL for database management.{" "}
@@ -33,21 +33,21 @@ const Amazon = () => {
 
         </li>
         <li className="text-base flex gap-2 text-textDark">
-          <span className="text-textGreen mt-1">
+          <span className="text-accent mt-1">
             <TiArrowForward />
           </span>
           <p>
-            <span className="text-textGreen">Implemented responsive UI/UX </span> {" "} with React and utilized state management
+            <span className="text-accent">Implemented responsive UI/UX </span> {" "} with React and utilized state management
             libraries like Redux for efficient data flow and complex state handling.
           </p>
         </li>
 
         <li className="text-base flex gap-2 text-textDark">
-          <span className="text-textGreen mt-1">
+          <span className="text-accent mt-1">
             <TiArrowForward />
           </span>
           <p>
-            <span className="text-textGreen">Integrated third-party APIs and created RESTful </span> {" "}services to support dynamic web applications,
+            <span className="text-accent">Integrated third-party APIs and created RESTful </span> {" "}services to support dynamic web applications,
             improving functionality and enhancing user experience.
             Optimized application performance by employing React best practices,
             reducing load times, and ensuring smooth interactions across devices.

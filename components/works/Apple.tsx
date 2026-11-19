@@ -11,20 +11,20 @@ const Apple = () => {
     >
       <h3 className="flex gap-1 font-medium text-xl font-titleFont">
         Full Stack Developer
-        <span className="text-textGreen tracking-wide">@Accent training institute</span>
+        <span className="text-accent tracking-wide">@Accent training institute</span>
       </h3>
       <p className="text-sm mt-1 font-medium text-textDark">
         Dec 2023 - Present
       </p>
       <ul className="mt-6 flex flex-col gap-3">
         <li className="text-base flex gap-2 text-textDark">
-          <span className="text-textGreen mt-1">
+          <span className="text-accent mt-1">
             <TiArrowForward />
           </span>
              SKIL: JavaScript , React , Node, MongoDb
         </li>
         <li className="text-base flex gap-2 text-textDark">
-          <span className="text-textGreen mt-1">
+          <span className="text-accent mt-1">
             <TiArrowForward />
           </span>
           Proficient in full-stack development utilizing React for frontend,
@@ -33,7 +33,7 @@ const Apple = () => {
           leveraging the MERN (MongoDB, Express.js, React, Node.js) stack to deliver scalable solutions.
         </li>
         <li className="text-base flex gap-2 text-textDark">
-          <span className="text-textGreen mt-1">
+          <span className="text-accent mt-1">
             <TiArrowForward />
           </span>
           Designed and implemented a user interface using Material-UI and CSS

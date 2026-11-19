@@ -1,46 +1,17 @@
-import { TbBrandGithub } from "react-icons/tb";
-import { SlSocialYoutube } from "react-icons/sl";
-import {
-  SlSocialLinkedin,
-  SlSocialFacebook,
-  SlSocialInstagram,
-} from "react-icons/sl";
+import SocialLinks from "./SocialLinks";
 
 const Footer = () => {
   return (
-    <div className="hidden mdl:inline-flex xl:hidden items-center justify-center w-full py-6 gap-4">
-      <a href="https://github.com/Vishwajeetdemo" target="_blank">
-        <span className="w-10 h-10 text-xl bg-bodyColor border-[1px] border-zinc-700 hover:border-textGreen text-zinc-200 rounded-full inline-flex items-center justify-center hover:text-textGreen cursor-pointer hover:-translate-y-2 transition-all duration-300">
-          <TbBrandGithub />
-        </span>
-      </a>
-      <a
-        href="https://youtube.com/@knowledgedevelopmenttech?si=noaycfVNJzQmZSV9"
-        target="_blank"
-      >
-        <span className="w-10 h-10 text-xl bg-bodyColor border-[1px] border-zinc-700 hover:border-textGreen text-zinc-200 rounded-full inline-flex items-center justify-center hover:text-textGreen cursor-pointer hover:-translate-y-2 transition-all duration-300">
-          <SlSocialYoutube />
-        </span>
-      </a>
-      <a
-        href="www.linkedin.com/in/vishwajeet-kumar-677891189"
-        target="_blank"
-      >
-        <span className="w-10 h-10 text-xl bg-bodyColor border-[1px] border-zinc-700 hover:border-textGreen text-zinc-200 rounded-full inline-flex items-center justify-center hover:text-textGreen cursor-pointer hover:-translate-y-2 transition-all duration-300">
-          <SlSocialLinkedin />
-        </span>
-      </a>
-      <a href="https://www.facebook.com/vishwajeet.vishwajeet.961993?mibextid=ZbWKwL" target="_blank">
-        <span className="w-10 h-10 text-xl bg-bodyColor border-[1px] border-zinc-700 hover:border-textGreen text-zinc-200 rounded-full inline-flex items-center justify-center hover:text-textGreen cursor-pointer hover:-translate-y-2 transition-all duration-300">
-          <SlSocialFacebook />
-        </span>
-      </a>
-      <a href="https://www.instagram.com/vishwajeetkumar504" target="_blank">
-        <span className="w-10 h-10 text-xl bg-bodyColor border-[1px] border-zinc-700 hover:border-textGreen text-zinc-200 rounded-full inline-flex items-center justify-center hover:text-textGreen cursor-pointer hover:-translate-y-2 transition-all duration-300">
-          <SlSocialInstagram />
-        </span>
-      </a>
-    </div>
+    <footer className="bg-white border-t border-accent/20 py-10">
+      <div className="container-x flex flex-col items-center gap-5 text-center">
+        <SocialLinks className="flex flex-wrap justify-center gap-3" />
+        <p className="text-xs md:text-sm font-titleFont tracking-wide text-textDark">
+          Designed &amp; built by{" "}
+          <span className="text-accent font-semibold">Vishwajeet Kumar</span> ·
+          Next.js, TypeScript &amp; Tailwind CSS
+        </p>
+      </div>
+    </footer>
   );
 };
 

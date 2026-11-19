@@ -12,14 +12,14 @@ const ReactBD = () => {
     >
       <h3 className="flex gap-1 font-medium text-xl font-titleFont">
         SOFTWARE ENGINEER
-        <span className="text-textGreen tracking-wide">@eSSL</span>
+        <span className="text-accent tracking-wide">@eSSL</span>
       </h3>
       <p className="text-sm mt-1 font-medium text-textDark">
-        Augst 2021 - 20 April 2024
+        August 2021 - 20 April 2024
       </p>
       <ul className="mt-6 flex flex-col gap-3">
         <li className="text-base flex gap-2 text-textDark">
-          <span className="text-textGreen mt-1">
+          <span className="text-accent mt-1">
             <TiArrowForward />
           </span>
           <ul>
@@ -34,7 +34,7 @@ const ReactBD = () => {
           </ul>
         </li>
         <li className="text-base flex gap-2 text-textDark">
-          <span className="text-textGreen mt-1">
+          <span className="text-accent mt-1">
             <TiArrowForward />
           </span>
           Work with a variety of different languages, platforms, frameworks, and
@@ -42,7 +42,7 @@ const ReactBD = () => {
           React, CSS, HTML, Postman, Node Js
         </li>
         <li className="text-base flex gap-2 text-textDark">
-          <span className="text-textGreen mt-1">
+          <span className="text-accent mt-1">
             <TiArrowForward />
           </span>
           Communicate with multi-disciplinary teams of engineers, designers,
